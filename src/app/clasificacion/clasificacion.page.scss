@@ -1,0 +1,17 @@
+hr {
+display: block;
+height: 1px;
+background: transparent;
+width: 100%;
+border: none;
+border-top: solid 1px #aaa;
+}
+
+div{
+  padding: 10px;
+}
+
+ion-content{
+  //background-color: transparent;
+  --background: url('../../assets/carticas.jpg') no-repeat center center fixed;
+}

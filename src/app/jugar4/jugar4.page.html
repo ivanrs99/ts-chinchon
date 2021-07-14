@@ -1,0 +1,76 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3" class="ion-text-center">
+        <div>Ivan</div>
+      </ion-col>
+      <ion-col size="3" class="ion-text-center">
+        <div>Sole</div>
+      </ion-col>
+      <ion-col size="3" class="ion-text-center">
+        <div>Jose</div>
+      </ion-col>
+      <ion-col size="3" class="ion-text-center">
+        <div>Xise</div>
+      </ion-col>
+    </ion-row>
+    <ion-row><hr/></ion-row>
+    <ion-row>
+      <ion-col size="3" class="ion-text-center">
+        <ion-list>
+          <ion-item *ngFor="let item of listaIvan">
+            <ion-label class="ion-text-center"><b>{{item}}</b></ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col size="3" class="ion-text-center">
+        <ion-list>
+          <ion-item *ngFor="let item of listaSole">
+            <ion-label class="ion-text-center"><b>{{item}}</b></ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col size="3" class="ion-text-center">
+        <ion-list>
+          <ion-item *ngFor="let item of listaJose">
+            <ion-label class="ion-text-center"><b>{{item}}</b></ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col size="3" class="ion-text-center">
+        <ion-list>
+          <ion-item *ngFor="let item of listaXise">
+            <ion-label class="ion-text-center"><b>{{item}}</b></ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-row>
+    <ion-col size="3" class="ion-text-center">
+      <label class="item item-input">
+          <input id="valorIvan" type="number" placeholder="Ivan">
+      </label>
+    </ion-col>
+    <ion-col size="3" class="ion-text-center">
+      <label class="item item-input">
+          <input id="valorSole" type="number" placeholder="Sole">
+      </label>
+    </ion-col>
+    <ion-col size="3" class="ion-text-center">
+      <label class="item item-input">
+          <input id="valorJose" type="number" placeholder="Jose">
+      </label>
+    </ion-col>
+    <ion-col size="3" class="ion-text-center">
+      <label class="item item-input">
+          <input id="valorXise" type="number" placeholder="Xise">
+      </label>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="3" class="ion-text-center">
+        <ion-button (click)='actualizar()'>Actualizar</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

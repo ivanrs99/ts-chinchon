@@ -1,0 +1,7 @@
+{
+  "name": "chinchon",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

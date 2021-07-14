@@ -1,0 +1,46 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" class="ion-text-center">
+        <div>{{j1}}</div>
+      </ion-col>
+      <ion-col size="6" class="ion-text-center">
+        <div>{{j2}}</div>
+      </ion-col>
+    </ion-row>
+    <ion-row><hr/></ion-row>
+    <ion-row>
+      <ion-col size="6" class="ion-text-center">
+        <ion-list style="font-weight: bold;">
+          <ion-item *ngFor="let item of lista1">
+            <ion-label class="ion-text-center"><b>{{item}}</b></ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col size="6" class="ion-text-center">
+        <ion-list>
+          <ion-item *ngFor="let item of lista2">
+            <ion-label class="ion-text-center"><b>{{item}}</b></ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-row>
+    <ion-col size="6" class="ion-text-center">
+      <label class="item item-input">
+          <input id="valor1" type="number" placeholder="{{j1}}">
+      </label>
+    </ion-col>
+    <ion-col size="6" class="ion-text-center">
+      <label class="item item-input">
+          <input id="valor2" type="number" placeholder="{{j2}}">
+      </label>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="4" class="ion-text-center">
+        <ion-button (click)='actualizar()'>Actualizar</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
